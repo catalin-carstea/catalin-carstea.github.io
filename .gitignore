@@ -1,0 +1,19 @@
+# Local editor and operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+*.log
+__pycache__/
+
+# Local credentials and environment files
+.env
+.env.*
+!.env.example
+
+# Local tooling and generated output
+.tools/
+.venv/
+node_modules/
+dist/
