@@ -90,4 +90,8 @@ before making further local changes.
 ## Course archive
 
 The `courses/` directory contains current course pages and local HTML reconstructions of earlier Wix course pages. 
-The Fall 2026 Calculus A (I) page is `courses/calculus1-2026.html`. The Research page and the Fall 2026 Real Analysis page are intentionally marked under construction.
+The Fall 2026 Calculus A (I) page is `courses/calculus1-2026.html`. The Fall 2026 Real Analysis page is `courses/real-analysis-2026.html`. The Research page remains under construction.
+
+The Real Analysis course information follows the September 8, 2026 version of
+`../RealAnalysis/syllabus.tex`. When the syllabus changes, update the course page
+to match; exam dates remain tentative until confirmed.
