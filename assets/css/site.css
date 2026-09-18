@@ -175,6 +175,13 @@ details.cv-details[open] summary { margin-bottom:18px; }
 .course-section { padding: 44px 0 48px; border-top: 1px solid var(--line); }
 .course-section h2 { margin-bottom: 24px; font-size: clamp(1.65rem, 3vw, 2.25rem); }
 .course-note { margin: -8px 0 30px; color: var(--muted); }
+.course-subscribe { margin-bottom: 32px; padding: 22px 24px; border-left: 3px solid var(--blue); background: rgba(49,88,110,.07); }
+.course-subscribe h2 { font-size: 1.45rem; line-height: 1.25; }
+.course-subscribe p { margin: 10px 0 0; }
+.course-subscribe .course-feed-link { font-weight: 600; }
+.course-subscribe details { margin-top: 14px; font-size: .9rem; }
+.course-subscribe summary { cursor: pointer; color: var(--blue-deep); }
+.course-feed-url { overflow-wrap: anywhere; }
 .course-info { margin: 0; }
 .course-info-row { display: grid; grid-template-columns: 170px minmax(0,1fr); gap: 28px; padding: 13px 0; border-top: 1px solid var(--line-soft); }
 .course-info-row:first-child { border-top: 0; padding-top: 0; }
@@ -210,7 +217,7 @@ details.cv-details[open] summary { margin-bottom:18px; }
   .course-toc, .page-toc { gap: 7px 17px; }
 }
 @media print {
-  .course-toc, .page-toc, .course-source, .back-link { display: none !important; }
+  .course-toc, .page-toc, .course-source, .back-link, .course-subscribe { display: none !important; }
   .course-section { padding: 20px 0; }
   .course-info-row, .archive-entry, .colloquium-talk { break-inside: avoid; }
 }

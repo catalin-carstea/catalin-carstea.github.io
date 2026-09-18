@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Calculus A (I), Fall 2026 — Course updates</title>
+    <link>https://catalin-carstea.github.io/courses/calculus1-2026.html</link>
+    <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
+    <language>en</language>
+    <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Fri, 18 Sep 2026 18:18:17 +0800</lastBuildDate>
+    <ttl>30</ttl>
+    <item>
+      <title>Lecture 4 notes and Homework 3 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-17:lecture-04-homework-03</guid>
+      <pubDate>Thu, 17 Sep 2026 16:01:06 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 4 student notes on limit laws and non-existence of limits, and Homework 3 for Monday, September 21, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-04-limit-laws-nonexistence-student.pdf">Lecture 4 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-03.pdf">Homework 3 (PDF)</a></li></ul>]]></description>
+    </item>
+    <item>
+      <title>English TA consultation schedule available</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#ta-consultation</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-17:ta-consultation</guid>
+      <pubDate>Thu, 17 Sep 2026 10:10:25 +0800</pubDate>
+      <description><![CDATA[<p>The English TA consultation schedule is available. Consultation takes place in SC207, Monday through Thursday, with shifts from 18:00–20:00 and 19:30–21:30.</p><p><a href="https://catalin-carstea.github.io/courses/calculus1-2026/calculus-ta-consultation-115-1-en.pdf">TA consultation schedule (PDF)</a></p>]]></description>
+    </item>
+    <item>
+      <title>Lecture 3 notes and Homework 2 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#lecture-notes</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-15:lecture-03-homework-02</guid>
+      <pubDate>Tue, 15 Sep 2026 09:22:04 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 3 student notes on limits and Homework 2, due Thursday, September 17, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-03-limits-student.pdf">Lecture 3 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-02.pdf">Homework 2 (PDF)</a></li></ul>]]></description>
+    </item>
+    <item>
+      <title>Lecture 2 notes and Homework 1 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#lecture-notes</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-10:lecture-02-homework-01</guid>
+      <pubDate>Thu, 10 Sep 2026 17:56:30 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 2 student notes on functions, inverses, and logarithms, and Homework 1, due Monday, September 14, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-02-functions-inverses-logarithms-student.pdf">Lecture 2 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-01.pdf">Homework 1 (PDF)</a></li></ul>]]></description>
+    </item>
+    <item>
+      <title>Lecture 1 notes posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#lecture-notes</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-09:lecture-01</guid>
+      <pubDate>Wed, 09 Sep 2026 18:15:34 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 1 student notes on real numbers and exponentials are available.</p><p><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-01-real-numbers-exponentials-student.pdf">Lecture 1 notes (PDF)</a></p>]]></description>
+    </item>
+  </channel>
+</rss>
