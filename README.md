@@ -83,6 +83,18 @@ You can also make small edits directly on GitHub by opening a file, choosing the
 pencil icon, and committing the change. Pull those edits into this local project
 before making further local changes.
 
+## Traffic analytics
+
+Every HTML page includes the Cloudflare Web Analytics snippet immediately before
+`</body>`. When creating a new page, include the same snippet so it appears in the
+site-wide dashboard. The beacon token in the snippet is a public site identifier,
+not an account credential.
+
+View traffic in the site's Cloudflare account under **Web Analytics**. Collection
+starts after deployment; historical traffic is not recovered. Script blockers
+can prevent visits from being counted, and direct PDF opens are not measured by
+the HTML-page beacon.
+
 ## Portrait
 
 `assets/images/portrait.webp` is the optimized site copy. `portrait-source.png` is retained so the photo can be replaced or recropped later.
