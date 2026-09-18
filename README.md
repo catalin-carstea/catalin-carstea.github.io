@@ -83,6 +83,41 @@ You can also make small edits directly on GitHub by opening a file, choosing the
 pencil icon, and committing the change. Pull those edits into this local project
 before making further local changes.
 
+## Calculus RSS updates
+
+The Fall 2026 Calculus A (I) feed is
+`courses/calculus1-2026/feed.xml`, advertised near the top of the course page and
+through an RSS autodiscovery link in its HTML head. It is served as a static file;
+there is no build step or external subscription service. Initial publication
+dates reflect the commits that posted the existing materials.
+
+Whenever posting new homework, lecture notes, an announcement, or an important
+correction, update the feed in the same commit as the course page and PDFs:
+
+1. Add a new `<item>` at the top of the channel's item list. Group related
+   materials from the same posting into one entry.
+2. Give it a short title, an absolute HTTPS link to the relevant course section,
+   and a description with absolute links to the new materials. Follow an
+   existing item's structure; escape XML characters in titles (e.g. `&amp;`).
+3. Set a unique, permanent `<guid isPermaLink="false">`, for example
+   `calculus1-2026:2026-09-21:lecture-05`, and the actual publication time in
+   `<pubDate>` using the existing RFC 2822 date format with a timezone.
+4. Update `<lastBuildDate>`. Keep existing items' GUIDs and publication dates
+   unchanged, so readers do not announce them again. To notify students of a
+   correction to an existing PDF, create a separate correction item with a new
+   GUID, even when the PDF URL stays the same.
+5. Validate the XML with
+   `python -c "import xml.etree.ElementTree as ET; ET.parse('courses/calculus1-2026/feed.xml')"`
+   and publish the feed along with the page and materials.
+
+Editing the course page or replacing a PDF alone does **not** create an RSS
+notification. Students subscribe by pasting the feed address into a reader;
+notification availability and polling intervals depend on their reader.
+
+The feed can later be connected to an RSS-to-email provider. Email subscriptions
+are not enabled yet. When connecting a provider, skip historical items to avoid
+emailing the initial archive to new subscribers.
+
 ## Traffic analytics
 
 Every HTML page includes the Cloudflare Web Analytics snippet immediately before
