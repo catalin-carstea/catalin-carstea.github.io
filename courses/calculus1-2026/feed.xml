@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 18 Sep 2026 18:18:17 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 21 Sep 2026 18:20:53 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 5 notes and Homework 4 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-21:lecture-05-homework-04</guid>
+      <pubDate>Mon, 21 Sep 2026 18:20:53 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 5 student notes on continuity and Homework 4 for Thursday, September 24, 2026, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-05-continuity-student.pdf">Lecture 5 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-04.pdf">Homework 4 (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 4 notes and Homework 3 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
