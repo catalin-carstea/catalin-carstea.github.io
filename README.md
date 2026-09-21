@@ -2,6 +2,18 @@
 
 This is a hosting-neutral static website: plain HTML/CSS, no build step, no server-side dependencies.
 
+## Persistent project guidance
+
+[AGENTS.md](AGENTS.md) contains the standing instructions for agents working in
+this repository, including the course-posting/RSS rule, analytics preservation,
+content conventions, and publishing checks. Read it when starting or resuming
+work, including after context compaction.
+
+This README holds detailed procedures and current feature status. Keep both
+files current as decisions change; use Git history for completed changes rather
+than maintaining a second chronological log. The root-level `AGENTS.md` follows
+the [Codex project instruction convention](https://learn.chatgpt.com/docs/agent-configuration/agents-md).
+
 ## Preview locally
 
 From this folder, run:
