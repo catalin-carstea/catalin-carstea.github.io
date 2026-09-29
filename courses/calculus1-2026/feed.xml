@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 24 Sep 2026 18:00:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 08:20:08 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Teaching assistant email addresses added</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#basic-info</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-29:ta-email-contacts</guid>
+      <pubDate>Tue, 29 Sep 2026 08:20:08 +0800</pubDate>
+      <description><![CDATA[<p>Email addresses for 張嘉元 and 蔡翔宇 are now listed in the <a href="https://catalin-carstea.github.io/courses/calculus1-2026.html#basic-info">course information</a>. Students may also contact the TAs through E3.</p>]]></description>
+    </item>
     <item>
       <title>Lecture 6 notes and Homework 5 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
