@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 29 Sep 2026 08:20:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2026 17:34:20 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Solutions to quizzes 1–4 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#quiz-solutions</link>
+      <guid isPermaLink="false">calculus1-2026:2026-09-30:quiz-01-04-solutions</guid>
+      <pubDate>Wed, 30 Sep 2026 17:34:20 +0800</pubDate>
+      <description><![CDATA[<p>Solutions to quizzes 1–4 are now available. Each PDF includes the full questions followed by their solutions.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-01-solutions.pdf">Quiz 1 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-02-solutions.pdf">Quiz 2 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-03-solutions.pdf">Quiz 3 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-04-solutions.pdf">Quiz 4 solutions (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Teaching assistant email addresses added</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#basic-info</link>
