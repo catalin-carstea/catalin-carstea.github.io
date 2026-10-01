@@ -1,3 +1,7 @@
+# Local project guidance
+/README.md
+/AGENTS.md
+
 # Local editor and operating-system files
 .DS_Store
 Thumbs.db
