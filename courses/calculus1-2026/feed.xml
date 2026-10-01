@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 30 Sep 2026 17:34:20 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 13:28:37 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 7 notes and Homework 6 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-01:lecture-07-homework-06</guid>
+      <pubDate>Thu, 01 Oct 2026 13:28:37 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 7 student notes on differentiation rules and Homework 6 for Monday, October 5, 2026, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-07-differentiation-rules-student.pdf">Lecture 7 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-06.pdf">Homework 6 (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Solutions to quizzes 1–4 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#quiz-solutions</link>
