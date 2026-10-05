@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 01 Oct 2026 13:28:37 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2026 18:07:51 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 8 notes, Homework 7, and Quiz 5 solutions posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-05:lecture-08-homework-07-quiz-05-solutions</guid>
+      <pubDate>Mon, 05 Oct 2026 18:07:51 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 8 student notes on the chain rule, implicit differentiation, and inverse functions, Homework 7 for Thursday, October 8, 2026, and Quiz 5 solutions are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-08-chain-rule-implicit-differentiation-student.pdf">Lecture 8 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-07.pdf">Homework 7 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-05-solutions.pdf">Quiz 5 solutions (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 7 notes and Homework 6 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
