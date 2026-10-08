@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 08 Oct 2026 10:03:26 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Oct 2026 13:01:32 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 9 notes and Homework 8 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-08:lecture-09-homework-08</guid>
+      <pubDate>Thu, 08 Oct 2026 13:01:32 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 9 student notes on derivatives, linear approximation, and extrema and Homework 8 for Monday, October 12, 2026, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-09-derivatives-linear-approximation-extrema-student.pdf">Lecture 9 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-08.pdf">Homework 8 (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>First midterm: October 29</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#assessment</link>
