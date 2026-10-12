@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 08 Oct 2026 13:01:32 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 18:19:41 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 10 notes, Homework 9, and Quiz 6–7 solutions posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-12:lecture-10-homework-09-quiz-06-07-solutions</guid>
+      <pubDate>Mon, 12 Oct 2026 18:19:41 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 10 student notes on extrema and the Mean Value Theorem, Homework 9 for Thursday, October 15, 2026, and solutions to Quizzes 6 and 7 are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-10-extrema-mean-value-theorem-student.pdf">Lecture 10 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-09.pdf">Homework 9 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-06-solutions.pdf">Quiz 6 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-07-solutions.pdf">Quiz 7 solutions (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 9 notes and Homework 8 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
