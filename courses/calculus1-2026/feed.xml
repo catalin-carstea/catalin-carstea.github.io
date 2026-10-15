@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 12 Oct 2026 18:19:41 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 22:37:46 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 11 notes and Homework 10 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-15:lecture-11-homework-10</guid>
+      <pubDate>Thu, 15 Oct 2026 22:37:46 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 11 student notes on derivative tests and concavity and Homework 10 for Monday, October 19, 2026, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-11-derivative-tests-concavity-student.pdf">Lecture 11 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-10.pdf">Homework 10 (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 10 notes, Homework 9, and Quiz 6–7 solutions posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
