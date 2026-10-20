@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 15 Oct 2026 22:37:46 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 08:28:53 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 12 notes, Homework 11, and Quiz 8–9 solutions posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-20:lecture-12-homework-11-quiz-08-09-solutions</guid>
+      <pubDate>Tue, 20 Oct 2026 08:28:53 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 12 student notes on curve sketching and L’Hôpital’s rule, Homework 11 for Thursday, October 22, 2026, and solutions to Quizzes 8 and 9 are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-12-curve-sketching-lhospital-student.pdf">Lecture 12 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-11.pdf">Homework 11 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-08-solutions.pdf">Quiz 8 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-09-solutions.pdf">Quiz 9 solutions (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 11 notes and Homework 10 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
