@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 20 Oct 2026 08:28:53 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 14:08:21 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Solutions to Homeworks 1–11 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-22:homework-01-11-solutions</guid>
+      <pubDate>Thu, 22 Oct 2026 14:08:21 +0800</pubDate>
+      <description><![CDATA[<p>Solutions to Homeworks 1–11 are now available. Each homework has a solutions link beside its assignment link on the course page.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-01-solutions.pdf">Homework 1 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-02-solutions.pdf">Homework 2 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-03-solutions.pdf">Homework 3 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-04-solutions.pdf">Homework 4 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-05-solutions.pdf">Homework 5 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-06-solutions.pdf">Homework 6 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-07-solutions.pdf">Homework 7 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-08-solutions.pdf">Homework 8 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-09-solutions.pdf">Homework 9 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-10-solutions.pdf">Homework 10 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-11-solutions.pdf">Homework 11 solutions (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 12 notes, Homework 11, and Quiz 8–9 solutions posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
