@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 22 Oct 2026 14:08:21 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 14:42:07 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 13 notes and Homework 12 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-10-22:lecture-13-homework-12</guid>
+      <pubDate>Thu, 22 Oct 2026 14:42:07 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 13 student notes on antiderivatives and the definite integral and Homework 12, due Monday, November 2, 2026, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-13-antiderivatives-definite-integral-student.pdf">Lecture 13 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-12.pdf">Homework 12 (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Solutions to Homeworks 1–11 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
