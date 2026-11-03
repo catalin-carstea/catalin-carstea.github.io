@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 22 Oct 2026 14:42:07 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 08:20:28 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 14 notes, Homework 13, and Quiz 10–11 solutions posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-03:lecture-14-homework-13-quiz-10-11-solutions</guid>
+      <pubDate>Tue, 03 Nov 2026 08:20:28 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 14 student notes on integral properties and the Fundamental Theorem of Calculus, Homework 13 for Thursday, November 5, 2026, and solutions to Quizzes 10 and 11 are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-14-integral-properties-fundamental-theorem-student.pdf">Lecture 14 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-13.pdf">Homework 13 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-10-solutions.pdf">Quiz 10 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-11-solutions.pdf">Quiz 11 solutions (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 13 notes and Homework 12 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
