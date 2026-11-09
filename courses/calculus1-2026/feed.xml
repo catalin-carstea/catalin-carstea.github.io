@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 05 Nov 2026 18:03:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 17:52:05 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 16 notes, Homework 15, and Quiz 12–13 solutions posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-09:lecture-16-homework-15-quiz-12-13-solutions</guid>
+      <pubDate>Mon, 09 Nov 2026 17:52:05 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 16 student notes on integration by parts, areas, and volumes, Homework 15 for Thursday, November 12, 2026, and solutions to Quizzes 12 and 13 are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-16-integration-by-parts-areas-volumes-student.pdf">Lecture 16 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-15.pdf">Homework 15 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-12-solutions.pdf">Quiz 12 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-13-solutions.pdf">Quiz 13 solutions (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 15 notes and Homework 14 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
