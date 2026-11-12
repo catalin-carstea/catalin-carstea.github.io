@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 09 Nov 2026 17:52:05 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 18:20:42 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 17 notes and Homework 16 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-12:lecture-17-homework-16</guid>
+      <pubDate>Thu, 12 Nov 2026 18:20:42 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 17 student notes on volumes of revolution and average values and Homework 16 for Monday, November 16, 2026, are available.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-17-volumes-of-revolution-average-value-student.pdf">Lecture 17 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-16.pdf">Homework 16 (PDF)</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 16 notes, Homework 15, and Quiz 12–13 solutions posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
