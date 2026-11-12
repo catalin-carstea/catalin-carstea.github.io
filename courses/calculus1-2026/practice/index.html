@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#f1ead8">
+  <title>Exam practice · Calculus A (I) · Cătălin I. Cârstea</title>
+  <link rel="stylesheet" href="../../../assets/css/site.css">
+  <link rel="stylesheet" href="../../../assets/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="practice.css">
+  <script defer src="../../../assets/vendor/katex/katex.min.js"></script>
+  <script defer src="practice.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrapper header-inner">
+      <a class="brand" href="../../../index.html">Cătălin I. Cârstea</a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../research.html">Research</a>
+        <a href="../../../publications.html">Publications</a>
+        <a href="../../../teaching.html">Teaching</a>
+        <a href="../../../cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrapper course-shell">
+    <header class="practice-head">
+      <p class="smallcaps">Calculus A (I) · Fall 2026</p>
+      <h1 class="page-title">Exam practice</h1>
+    </header>
+
+    <section id="setup" aria-labelledby="setup-title">
+      <h2 id="setup-title" tabindex="-1">Start a practice session</h2>
+      <p>Work through 10 randomly selected questions. At the end, check your score and read the worked solutions for any questions you missed.</p>
+      <form id="setup-form" hidden>
+        <label for="topic">Practice topic</label>
+        <select id="topic"><option value="">All topics (full semester)</option></select>
+        <button class="text-button primary" type="submit">Start practice</button>
+      </form>
+      <p id="load-status" role="status"></p>
+      <noscript><p>Enable JavaScript to start a practice session.</p></noscript>
+    </section>
+
+    <section id="quiz" aria-labelledby="position" hidden>
+      <div class="question-meta">
+        <h2 id="position" tabindex="-1"></h2>
+        <span id="question-topic"></span>
+      </div>
+      <progress id="progress" aria-label="Question position"></progress>
+      <form id="answer-form">
+        <fieldset>
+          <legend id="prompt" class="math-text"></legend>
+          <div id="choices"></div>
+        </fieldset>
+        <div class="actions">
+          <button class="text-button" type="button" id="previous">Previous</button>
+          <button class="text-button primary" type="submit" id="next">Next question</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="results" aria-labelledby="score" hidden>
+      <h2 id="score" tabindex="-1"></h2>
+      <p id="result-note"></p>
+      <div class="actions">
+        <button class="text-button primary" type="button" id="new-session">New practice session</button>
+        <button class="text-button" type="button" id="retry">Retry missed questions</button>
+      </div>
+      <div id="review"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      <div><div class="footer-name">Cătălin I. Cârstea</div><div class="footer-meta">Department of Applied Mathematics · National Yang Ming Chiao Tung University</div></div>
+      <div class="footer-links">
+        <a href="mailto:carstea@nycu.edu.tw">NYCU email</a>
+        <a href="mailto:catalin.carstea@gmail.com">Gmail</a>
+        <a href="https://www.math.nycu.edu.tw/faculty/e_faculty_content.php?SC_ID=1&amp;S_ID=147">NYCU profile</a>
+        <a href="https://scholar.google.com/citations?user=KpdbX9MAAAAJ&amp;hl=en">Google Scholar</a>
+      </div>
+    </div>
+  </footer>
+<!-- Cloudflare Web Analytics -->
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6c54e7905f3446d68dda44f22854ca1c"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</body>
+</html>
