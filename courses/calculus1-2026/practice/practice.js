@@ -4,7 +4,6 @@ const sessionLength = 10;
 const byId = (id) => document.getElementById(id);
 let bank = [];
 let questions = [];
-let answers = [];
 let current = 0;
 
 function shuffled(items) {
@@ -63,8 +62,7 @@ async function loadBank() {
 }
 
 function startSession(items) {
-  questions = items.map((q) => ({ ...q, choices: shuffled(q.choices) }));
-  answers = Array(items.length).fill(null);
+  questions = items.map((q) => ({ ...q, choices: shuffled(q.choices), selectedIds: [] }));
   current = 0;
   showView("quiz");
   showQuestion();
@@ -78,21 +76,23 @@ function showQuestion() {
   byId("question-topic").textContent = question.topic;
   renderMathText(byId("prompt"), question.prompt);
 
+  const multiple = question.type === "multiple";
+  byId("answer-instruction").textContent = multiple ? "Select all that apply." : "Select one answer.";
   const choices = byId("choices");
   choices.replaceChildren();
   for (const choice of question.choices) {
     const label = document.createElement("label");
     label.className = "choice";
-    const radio = document.createElement("input");
-    radio.type = "radio";
-    radio.name = "answer";
-    radio.value = choice.id;
-    radio.required = true;
-    radio.checked = answers[current] === choice.id;
+    const input = document.createElement("input");
+    input.type = multiple ? "checkbox" : "radio";
+    input.name = "answer";
+    input.value = choice.id;
+    input.required = !multiple;
+    input.checked = question.selectedIds.includes(choice.id);
     const text = document.createElement("span");
     text.className = "math-text";
     renderMathText(text, choice.text);
-    label.append(radio, text);
+    label.append(input, text);
     choices.append(label);
   }
 
@@ -101,8 +101,18 @@ function showQuestion() {
   byId("position").focus();
 }
 
+function correctIds(question) {
+  return question.type === "multiple" ? question.correct_choice_ids : [question.correct_choice_id];
+}
+
+function isCorrect(question) {
+  const expected = correctIds(question);
+  return question.selectedIds.length === expected.length &&
+    expected.every((id) => question.selectedIds.includes(id));
+}
+
 function missedQuestions() {
-  return questions.filter((q, index) => answers[index] !== q.correct_choice_id);
+  return questions.filter((question) => !isCorrect(question));
 }
 
 function addReview(question, index) {
@@ -115,19 +125,23 @@ function addReview(question, index) {
   renderMathText(prompt, question.prompt);
   const details = document.createElement("dl");
   details.className = "review-answers";
-  const choiceText = (id) => question.choices.find((choice) => choice.id === id).text;
+  const choiceTexts = (ids) => question.choices.filter((choice) => ids.includes(choice.id)).map((choice) => choice.text);
+  const expected = correctIds(question);
 
-  for (const [label, value] of [
-    ["Your answer", choiceText(answers[index])],
-    ["Correct answer", choiceText(question.correct_choice_id)],
-    ["Worked solution", question.solution]
+  for (const [label, values] of [
+    [question.selectedIds.length === 1 ? "Your answer" : "Your answers", choiceTexts(question.selectedIds)],
+    [expected.length === 1 ? "Correct answer" : "Correct answers", choiceTexts(expected)],
+    ["Worked solution", [question.solution]]
   ]) {
     const term = document.createElement("dt");
     term.textContent = label;
-    const description = document.createElement("dd");
-    description.className = "math-text";
-    renderMathText(description, value);
-    details.append(term, description);
+    details.append(term);
+    for (const value of values) {
+      const description = document.createElement("dd");
+      description.className = "math-text";
+      renderMathText(description, value);
+      details.append(description);
+    }
   }
   item.append(heading, prompt, details);
   byId("review").append(item);
@@ -140,7 +154,7 @@ function showResults() {
   byId("retry").hidden = missed === 0;
   byId("review").replaceChildren();
   questions.forEach((question, i) => {
-    if (answers[i] !== question.correct_choice_id) addReview(question, i);
+    if (!isCorrect(question)) addReview(question, i);
   });
   showView("results");
   byId("score").focus();
@@ -153,8 +167,9 @@ byId("setup-form").addEventListener("submit", (event) => {
   startSession(shuffled(pool).slice(0, sessionLength));
 });
 
-byId("choices").addEventListener("change", (event) => {
-  answers[current] = event.target.value;
+byId("choices").addEventListener("change", () => {
+  byId("choices").querySelector("input").setCustomValidity("");
+  questions[current].selectedIds = new FormData(byId("answer-form")).getAll("answer");
 });
 
 byId("previous").addEventListener("click", () => {
@@ -164,6 +179,12 @@ byId("previous").addEventListener("click", () => {
 
 byId("answer-form").addEventListener("submit", (event) => {
   event.preventDefault();
+  if (questions[current].selectedIds.length === 0) {
+    const firstChoice = byId("choices").querySelector("input");
+    firstChoice.setCustomValidity("Select at least one answer.");
+    firstChoice.reportValidity();
+    return;
+  }
   if (current === questions.length - 1) {
     showResults();
   } else {

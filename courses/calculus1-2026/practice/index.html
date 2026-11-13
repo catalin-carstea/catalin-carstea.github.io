@@ -35,7 +35,7 @@
 
     <section id="setup" aria-labelledby="setup-title">
       <h2 id="setup-title" tabindex="-1">Start a practice session</h2>
-      <p>Work through 10 randomly selected questions. At the end, check your score and read the worked solutions for any questions you missed.</p>
+      <p>Work through 10 randomly selected questions. For questions marked “Select all that apply,” choose every correct answer to earn the point. At the end, review the worked solutions for any questions you missed.</p>
       <form id="setup-form" hidden>
         <label for="topic">Practice topic</label>
         <select id="topic"><option value="">All topics (full semester)</option></select>
@@ -52,8 +52,9 @@
       </div>
       <progress id="progress" aria-label="Question position"></progress>
       <form id="answer-form">
-        <fieldset>
+        <fieldset aria-describedby="answer-instruction">
           <legend id="prompt" class="math-text"></legend>
+          <p id="answer-instruction"></p>
           <div id="choices"></div>
         </fieldset>
         <div class="actions">
