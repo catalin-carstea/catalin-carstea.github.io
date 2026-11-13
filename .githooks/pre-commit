@@ -1,0 +1,20 @@
+#!/bin/sh
+# Refresh practice when a lecture PDF or a course-page lecture link is staged.
+course=courses/calculus1-2026
+if git diff --cached --quiet -- "$course/lecture-*.pdf" &&
+   git diff --cached --quiet -G 'href="calculus1-2026/lecture-' -- "$course.html"; then
+    exit 0
+fi
+
+snapshot="$course/practice/coverage.js"
+if ! git diff --quiet -- "$snapshot"; then
+    echo "Practice coverage has unstaged edits. Preserving them; review the snapshot separately." >&2
+    exit 0
+fi
+if ! python3 .githooks/sync-calculus-coverage.py; then
+    echo "Posting the notes with the existing practice snapshot. Recheck coverage when the records are available." >&2
+    exit 0
+fi
+if ! git diff --quiet -- "$snapshot"; then
+    git add -- "$snapshot" || exit 1
+fi

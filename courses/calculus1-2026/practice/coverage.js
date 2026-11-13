@@ -1,6 +1,6 @@
 "use strict";
 
-// Based on the instructor's teaching log and coverage checklist.
+// Generated from confirmed Calculus teaching records.
 const coverageThrough = "Lecture 17 · Nov 12";
 const coveredTopics = new Set([
   "Exponential, logarithmic and inverse functions",
@@ -23,6 +23,7 @@ const coveredTopics = new Set([
   "Cylindrical shells",
   "Integration by parts"
 ]);
+// End of generated coverage.
 
 // Some questions also use a technique outside their primary topic.
 const additionalPrerequisites = {
