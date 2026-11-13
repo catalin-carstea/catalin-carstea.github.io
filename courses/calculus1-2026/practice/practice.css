@@ -24,6 +24,10 @@
 .text-button { min-height: 44px; border-radius: 2px; padding: 9px 18px; }
 .text-button.primary { background: var(--blue-deep); color: #fff; }
 .text-button.primary:hover { background: var(--blue); }
+#setup-form .timing-option { display: flex; align-items: center; gap: 8px; min-height: 44px; color: var(--ink); font-size: 1rem; cursor: pointer; }
+#timed { margin: 0; width: 1.1rem; height: 1.1rem; accent-color: var(--blue-deep); }
+#timing-note { margin: 0 0 20px; font-size: .9rem; color: var(--muted); }
+#countdown { color: var(--blue-deep); font-variant-numeric: tabular-nums; font-weight: 600; }
 :where(button, select, input):focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
 .question-meta, .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
 .question-meta { justify-content: space-between; }

@@ -1,10 +1,14 @@
 "use strict";
 
-const sessionLength = 10;
+const sessionLength = 5;
+const timeLimit = 30 * 60 * 1000;
+const storageKey = "calculus1-2026-timed-practice";
 const byId = (id) => document.getElementById(id);
 let bank = [];
 let questions = [];
 let current = 0;
+let deadline = 0;
+let timer;
 
 function shuffled(items) {
   const copy = [...items];
@@ -47,6 +51,9 @@ async function loadBank() {
       throw new Error("Practice resources unavailable");
     }
     bank = data.questions;
+    if (coveredQuestions(bank).length >= sessionLength) {
+      byId("topic").add(new Option(`Covered in class (${coverageThrough})`, "covered"));
+    }
     const topics = new Map();
     for (const question of bank) {
       topics.set(question.topic, (topics.get(question.topic) || 0) + 1);
@@ -56,17 +63,79 @@ async function loadBank() {
     }
     byId("setup-form").hidden = false;
     status.textContent = "";
+    restoreTimedSession();
   } catch {
     status.textContent = "Practice could not load. Reload the page to try again.";
   }
 }
 
-function startSession(items) {
+function startSession(items, timed = false) {
   questions = items.map((q) => ({ ...q, choices: shuffled(q.choices), selectedIds: [] }));
   current = 0;
+  deadline = timed ? Date.now() + timeLimit : 0;
+  saveTimedSession();
+  openQuiz();
+}
+
+function saveTimedSession() {
+  if (!deadline) return;
+  try {
+    sessionStorage.setItem(storageKey, JSON.stringify({
+      deadline, current, topic: byId("topic").value,
+      questions: questions.map((q) => ({
+        id: q.id, choices: q.choices.map((choice) => choice.id), selectedIds: q.selectedIds
+      }))
+    }));
+  } catch { /* The countdown still runs when tab storage is unavailable. */ }
+}
+
+function restoreTimedSession() {
+  try {
+    const saved = JSON.parse(sessionStorage.getItem(storageKey));
+    if (!saved || !Number.isFinite(saved.deadline) || saved.questions.length !== sessionLength ||
+        !Number.isInteger(saved.current) || saved.current < 0 || saved.current >= sessionLength) return;
+    const restored = saved.questions.map((item) => {
+      const question = bank.find((q) => q.id === item.id);
+      const choices = item.choices.map((id) => question.choices.find((choice) => choice.id === id));
+      if (choices.some((choice) => !choice) || choices.length !== question.choices.length) {
+        throw new Error("Question choices have changed");
+      }
+      return { ...question, choices, selectedIds: item.selectedIds.filter((id) => item.choices.includes(id)) };
+    });
+    questions = restored;
+    current = saved.current;
+    deadline = saved.deadline;
+    byId("topic").value = saved.topic;
+    byId("timed").checked = true;
+  } catch { return; }
+  openQuiz();
+}
+
+function openQuiz() {
   showView("quiz");
+  byId("countdown").hidden = !deadline;
+  if (deadline) {
+    if (updateCountdown()) return;
+    timer = window.setInterval(updateCountdown, 500);
+  }
   showQuestion();
 }
+
+// Use the deadline even when a background tab or sleeping phone delays a tick.
+function updateCountdown() {
+  if (!deadline) return false;
+  const seconds = Math.ceil((deadline - Date.now()) / 1000);
+  if (seconds <= 0) {
+    showResults(true);
+    return true;
+  }
+  const minutes = Math.floor(seconds / 60);
+  byId("countdown").textContent = `Time left ${minutes}:${String(seconds % 60).padStart(2, "0")}`;
+  return false;
+}
+
+document.addEventListener("visibilitychange", updateCountdown);
+window.addEventListener("pageshow", updateCountdown);
 
 function showQuestion() {
   const question = questions[current];
@@ -129,7 +198,8 @@ function addReview(question, index) {
   const expected = correctIds(question);
 
   for (const [label, values] of [
-    [question.selectedIds.length === 1 ? "Your answer" : "Your answers", choiceTexts(question.selectedIds)],
+    [question.selectedIds.length > 1 ? "Your answers" : "Your answer",
+      question.selectedIds.length ? choiceTexts(question.selectedIds) : ["Unanswered"]],
     [expected.length === 1 ? "Correct answer" : "Correct answers", choiceTexts(expected)],
     ["Worked solution", [question.solution]]
   ]) {
@@ -147,10 +217,16 @@ function addReview(question, index) {
   byId("review").append(item);
 }
 
-function showResults() {
+function showResults(expired = false) {
+  clearInterval(timer);
+  if (deadline) {
+    deadline = 0;
+    try { sessionStorage.removeItem(storageKey); } catch { /* Storage may be unavailable. */ }
+  }
   const missed = missedQuestions().length;
   byId("score").textContent = `${questions.length - missed} of ${questions.length} correct`;
-  byId("result-note").textContent = missed ? "Review the questions you missed below." : "You answered every question correctly.";
+  const feedback = missed ? "Review the questions you missed below." : "You answered every question correctly.";
+  byId("result-note").textContent = expired ? `Time is up. ${feedback}` : feedback;
   byId("retry").hidden = missed === 0;
   byId("review").replaceChildren();
   questions.forEach((question, i) => {
@@ -163,22 +239,29 @@ function showResults() {
 byId("setup-form").addEventListener("submit", (event) => {
   event.preventDefault();
   const topic = byId("topic").value;
-  const pool = topic ? bank.filter((q) => q.topic === topic) : bank;
-  startSession(shuffled(pool).slice(0, sessionLength));
+  let pool = bank;
+  if (topic === "covered") pool = coveredQuestions(bank);
+  else if (topic) pool = bank.filter((q) => q.topic === topic);
+  startSession(shuffled(pool).slice(0, sessionLength), byId("timed").checked);
 });
 
 byId("choices").addEventListener("change", () => {
+  if (updateCountdown() || byId("quiz").hidden) return;
   byId("choices").querySelector("input").setCustomValidity("");
   questions[current].selectedIds = new FormData(byId("answer-form")).getAll("answer");
+  saveTimedSession();
 });
 
 byId("previous").addEventListener("click", () => {
+  if (updateCountdown() || byId("quiz").hidden) return;
   current--;
+  saveTimedSession();
   showQuestion();
 });
 
 byId("answer-form").addEventListener("submit", (event) => {
   event.preventDefault();
+  if (updateCountdown() || byId("quiz").hidden) return;
   if (questions[current].selectedIds.length === 0) {
     const firstChoice = byId("choices").querySelector("input");
     firstChoice.setCustomValidity("Select at least one answer.");
@@ -189,6 +272,7 @@ byId("answer-form").addEventListener("submit", (event) => {
     showResults();
   } else {
     current++;
+    saveTimedSession();
     showQuestion();
   }
 });

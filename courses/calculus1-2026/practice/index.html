@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="../../../assets/vendor/katex/katex.min.css">
   <link rel="stylesheet" href="practice.css">
   <script defer src="../../../assets/vendor/katex/katex.min.js"></script>
+  <script defer src="coverage.js"></script>
   <script defer src="practice.js"></script>
 </head>
 <body>
@@ -35,10 +36,12 @@
 
     <section id="setup" aria-labelledby="setup-title">
       <h2 id="setup-title" tabindex="-1">Start a practice session</h2>
-      <p>Work through 10 randomly selected questions. For questions marked “Select all that apply,” choose every correct answer to earn the point. At the end, review the worked solutions for any questions you missed.</p>
+      <p>Work through 5 randomly selected questions. For questions marked “Select all that apply,” choose every correct answer to earn the point. At the end, review the worked solutions for any questions you missed.</p>
       <form id="setup-form" hidden>
         <label for="topic">Practice topic</label>
         <select id="topic"><option value="">All topics (full semester)</option></select>
+        <label class="timing-option"><input id="timed" type="checkbox" aria-describedby="timing-note"> Use a 30-minute timer</label>
+        <p id="timing-note">When time runs out, your selected answers are graded automatically. Unanswered questions count as missed.</p>
         <button class="text-button primary" type="submit">Start practice</button>
       </form>
       <p id="load-status" role="status"></p>
@@ -49,6 +52,7 @@
       <div class="question-meta">
         <h2 id="position" tabindex="-1"></h2>
         <span id="question-topic"></span>
+        <span id="countdown" role="timer" hidden></span>
       </div>
       <progress id="progress" aria-label="Question position"></progress>
       <form id="answer-form">
