@@ -9,6 +9,8 @@ let questions = [];
 let current = 0;
 let deadline = 0;
 let timer;
+let runId;
+let runKind;
 
 function shuffled(items) {
   const copy = [...items];
@@ -69,7 +71,9 @@ async function loadBank() {
   }
 }
 
-function startSession(items, timed = false) {
+function startSession(items, timed = false, kind = "practice") {
+  runId = crypto.randomUUID();
+  runKind = kind;
   questions = items.map((q) => ({ ...q, choices: shuffled(q.choices), selectedIds: [] }));
   current = 0;
   deadline = timed ? Date.now() + timeLimit : 0;
@@ -81,7 +85,7 @@ function saveTimedSession() {
   if (!deadline) return;
   try {
     sessionStorage.setItem(storageKey, JSON.stringify({
-      deadline, current, topic: byId("topic").value,
+      deadline, current, runId, topic: byId("topic").value,
       questions: questions.map((q) => ({
         id: q.id, choices: q.choices.map((choice) => choice.id), selectedIds: q.selectedIds
       }))
@@ -103,6 +107,8 @@ function restoreTimedSession() {
       return { ...question, choices, selectedIds: item.selectedIds.filter((id) => item.choices.includes(id)) };
     });
     questions = restored;
+    runId = saved.runId || crypto.randomUUID();
+    runKind = "practice";
     current = saved.current;
     deadline = saved.deadline;
     byId("topic").value = saved.topic;
@@ -218,12 +224,20 @@ function addReview(question, index) {
 }
 
 function showResults(expired = false) {
+  if (!runId) return;
+  const mode = deadline ? "timed" : "untimed";
+  const completedAt = new Date(expired ? deadline : Date.now()).toISOString();
+  const missed = missedQuestions().length;
+  runLog.record({
+    id: runId, completedAt, correct: questions.length - missed, total: questions.length,
+    kind: runKind, mode, finish: expired ? "time_limit" : "submitted"
+  });
+  runId = null;
   clearInterval(timer);
   if (deadline) {
     deadline = 0;
     try { sessionStorage.removeItem(storageKey); } catch { /* Storage may be unavailable. */ }
   }
-  const missed = missedQuestions().length;
   byId("score").textContent = `${questions.length - missed} of ${questions.length} correct`;
   const feedback = missed ? "Review the questions you missed below." : "You answered every question correctly.";
   byId("result-note").textContent = expired ? `Time is up. ${feedback}` : feedback;
@@ -277,7 +291,7 @@ byId("answer-form").addEventListener("submit", (event) => {
   }
 });
 
-byId("retry").addEventListener("click", () => startSession(missedQuestions()));
+byId("retry").addEventListener("click", () => startSession(missedQuestions(), false, "retry"));
 byId("new-session").addEventListener("click", () => {
   showView("setup");
   byId("setup-title").focus();

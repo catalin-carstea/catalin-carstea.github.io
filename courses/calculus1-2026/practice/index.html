@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
+  <meta name="practice-run-endpoint" content="">
   <meta name="theme-color" content="#f1ead8">
   <title>Exam practice · Calculus A (I) · Cătălin I. Cârstea</title>
   <link rel="stylesheet" href="../../../assets/css/site.css">
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="practice.css">
   <script defer src="../../../assets/vendor/katex/katex.min.js"></script>
   <script defer src="coverage.js"></script>
+  <script defer src="run-log.js"></script>
   <script defer src="practice.js"></script>
 </head>
 <body>
@@ -42,6 +44,7 @@
         <select id="topic"><option value="">All topics (full semester)</option></select>
         <label class="timing-option"><input id="timed" type="checkbox" aria-describedby="timing-note"> Use a 30-minute timer</label>
         <p id="timing-note">When time runs out, your selected answers are graded automatically. Unanswered questions count as missed.</p>
+        <p id="run-notice" hidden>To help evaluate this practice tool, the instructor records each finished session’s score, completion time, and practice mode, including retries. The record contains no name, student ID, or individual answers.</p>
         <button class="text-button primary" type="submit">Start practice</button>
       </form>
       <p id="load-status" role="status"></p>
