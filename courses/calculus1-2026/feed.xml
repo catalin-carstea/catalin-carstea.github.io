@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 12 Nov 2026 18:20:42 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 09:51:40 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Calculus exam practice is now available</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#exam-practice</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-14:exam-practice</guid>
+      <pubDate>Sat, 14 Nov 2026 09:51:40 +0800</pubDate>
+      <description><![CDATA[<p>Practice for exams with five multiple-choice questions at a time. Choose a topic or select “Covered in class” to review the material we’ve studied so far. You can work at your own pace or try the 30-minute timer. When you finish, you’ll see your score and worked solutions for any questions you missed.</p><p><a href="https://catalin-carstea.github.io/courses/calculus1-2026/practice/">Open exam practice</a></p>]]></description>
+    </item>
     <item>
       <title>Lecture 17 notes and Homework 16 posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
