@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 16 Nov 2026 12:48:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 18:23:57 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 18 notes, Homework 17, and Quiz 14–15 solutions posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-16:lecture-18-homework-17-quiz-14-15-solutions</guid>
+      <pubDate>Mon, 16 Nov 2026 18:23:57 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 18 student notes on trigonometric integrals, Homework 17 for Thursday, November 19, 2026, and solutions to Quizzes 14 and 15 are available. The “Covered in class” practice selection is updated through Lecture 18 and now includes trigonometric integrals.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-18-trigonometric-integrals-student.pdf">Lecture 18 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-17.pdf">Homework 17 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-14-solutions.pdf">Quiz 14 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/quiz-15-solutions.pdf">Quiz 15 solutions (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/practice/">Exam practice</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Second midterm: December 7</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#assessment</link>
