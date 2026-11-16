@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 14 Nov 2026 09:51:40 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 12:48:14 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Second midterm: December 7</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#assessment</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-16:second-midterm-date</guid>
+      <pubDate>Mon, 16 Nov 2026 12:48:14 +0800</pubDate>
+      <description><![CDATA[<p>The second midterm will be on Monday, December 7, 2026.</p><p><a href="https://catalin-carstea.github.io/courses/calculus1-2026.html#assessment">View assessment information</a></p>]]></description>
+    </item>
     <item>
       <title>Calculus exam practice is now available</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#exam-practice</link>
