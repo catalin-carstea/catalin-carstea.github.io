@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 16 Nov 2026 18:23:57 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 16:59:00 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 19 notes and Homework 18 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-20:lecture-19-homework-18</guid>
+      <pubDate>Fri, 20 Nov 2026 16:59:00 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 19 student notes on trigonometric substitution and Homework 18 for Monday, November 23, 2026, are available. The “Covered in class” practice selection is updated through Lecture 19 and now includes trigonometric substitution.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-19-trigonometric-substitution-student.pdf">Lecture 19 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-18.pdf">Homework 18 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/practice/">Exam practice</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 18 notes, Homework 17, and Quiz 14–15 solutions posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>

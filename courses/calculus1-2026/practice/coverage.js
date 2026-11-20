@@ -1,7 +1,7 @@
 "use strict";
 
 // Generated from confirmed Calculus teaching records.
-const coverageThrough = "Lecture 18 · Nov 16";
+const coverageThrough = "Lecture 19 · Nov 19";
 const coveredTopics = new Set([
   "Exponential, logarithmic and inverse functions",
   "Finite and one-sided limits",
@@ -22,7 +22,8 @@ const coveredTopics = new Set([
   "Volumes by cross-sections, disks and washers",
   "Cylindrical shells",
   "Integration by parts",
-  "Trigonometric integrals"
+  "Trigonometric integrals",
+  "Trigonometric substitution"
 ]);
 // End of generated coverage.
 
