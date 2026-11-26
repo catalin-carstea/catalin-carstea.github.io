@@ -6,8 +6,15 @@
     <description>New homework, lecture notes, and announcements for Cătălin I. Cârstea’s Calculus A (I) class at National Yang Ming Chiao Tung University.</description>
     <language>en</language>
     <atom:link href="https://catalin-carstea.github.io/courses/calculus1-2026/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 24 Nov 2026 08:55:10 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:43:18 +0800</lastBuildDate>
     <ttl>30</ttl>
+    <item>
+      <title>Lecture 21 notes and Homework 20 posted</title>
+      <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
+      <guid isPermaLink="false">calculus1-2026:2026-11-26:lecture-21-homework-20</guid>
+      <pubDate>Thu, 26 Nov 2026 22:43:18 +0800</pubDate>
+      <description><![CDATA[<p>Lecture 21 student notes on improper integrals and Homework 20 for Monday, November 30, 2026, are available. The “Covered in class” practice selection now includes improper integrals.</p><ul><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/lecture-21-improper-integrals-student.pdf">Lecture 21 notes (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/homework-20.pdf">Homework 20 (PDF)</a></li><li><a href="https://catalin-carstea.github.io/courses/calculus1-2026/practice/">Exam practice</a></li></ul>]]></description>
+    </item>
     <item>
       <title>Lecture 20 notes, Homework 19, and Quiz 16–17 solutions posted</title>
       <link>https://catalin-carstea.github.io/courses/calculus1-2026.html#homework</link>
